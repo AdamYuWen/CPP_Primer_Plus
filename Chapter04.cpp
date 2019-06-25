@@ -1,3 +1,4 @@
+// Chapter04.cpp -- Programming exercises for Chapter 04
 #include <iostream>
 #include <string>
 #include <cstring>

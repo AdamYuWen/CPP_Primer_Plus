@@ -1,3 +1,4 @@
+// Chapter03.cpp -- Programming exercises for Chapter 03
 #include <iostream>
 using std::cin;
 using std::cout;
