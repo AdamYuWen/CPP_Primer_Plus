@@ -1,14 +1,16 @@
 // Chapter04.cpp -- Programming exercises for Chapter 04
 #include <iostream>
+#include <array>
 #include <string>
 #include <cstring>
-#include <array>
+
+using std::array;
+using std::string;
 
 using std::cin;
 using std::cout;
 using std::endl;
 using std::getline;
-using std::string;
 
 // Programming Exercises 4.1
 void displayInformation() {
@@ -191,7 +193,7 @@ void candyBarArrayPointer() {
 
 // Programming Exercises 4.10
 void averageTime() {
-	std::array<double, 3> dash;
+	array<double, 3> dash;
 	double average;
 
 	cout << "Enter the 1st time for the 40-yd dash: ";
