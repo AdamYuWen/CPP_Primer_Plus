@@ -155,8 +155,16 @@ void readWordArray() {
 
 	cout << "Enter words (to stop, type the word done)\n";
 	cout << "(each input cannot be longer than 20 characters):" << endl;
-	while (cin.getline(input, ArraySize) && strcmp(input, "done")) {
+	while (cin >> input && strcmp(input, "done")) {
 		cnt++;
+	}
+
+	// Because the program can read more words after "done", there will
+	// be more words in cin. The following while loop clear all words
+	// after "done", so that it won't affect the while loop in main
+	// function.
+	while (cin.get() != '\n') {
+		continue;
 	}
 	cout << "You entered a total of " << cnt << " words.\n";
 }
@@ -165,14 +173,14 @@ void readWordArray() {
 void readWordString() {
 	string input;
 	int cnt = 0;
-
-	// The method is different from 5.8.
-	// For 5.8, read all words, then analysis. So, the output
-	// will be the same as the example in the book.
-	// For 5.9, read word one by one, meet "done", then stop.
+	
 	cout << "Enter words (to stop, type the word done):" << endl;
 	while (cin >> input && input != "done") {
 		cnt++;
+	}
+	
+	while (cin.get() != '\n') {
+		continue;
 	}
 	cout << "You entered a total of " << cnt << " words.\n";
 }
@@ -202,7 +210,7 @@ int main() {
 	cout << "Which exercise do you want to test? (1-10) (Enter \"0\" to quit)\n";
 	(cin >> exerciseNum).get();
 
-	while (exerciseNum < 0) {
+	while (exerciseNum < 0 || exerciseNum > 10) {
 		cout << "Please provide a valid number!" << endl;
 		cout << "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" << endl;
 		cout << "Which exercise do you want to test? (1-10) (Enter \"0\" to quit)\n";
