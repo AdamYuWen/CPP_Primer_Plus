@@ -215,7 +215,7 @@ int main() {
 	cout << "Which exercise do you want to test? (1-10) (Enter \"0\" to quit)\n";
 	(cin >> exerciseNum).get();
 
-	while (exerciseNum < 0) {
+	while (exerciseNum < 0 || exerciseNum > 10) {
 		cout << "Please provide a valid number!" << endl;
 		cout << "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" << endl;
 		cout << "Which exercise do you want to test? (1-10) (Enter \"0\" to quit)\n";
