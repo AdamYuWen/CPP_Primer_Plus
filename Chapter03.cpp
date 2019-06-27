@@ -81,7 +81,7 @@ void percentageOfPopulation() {
 	cout << "Enter the population of the US: ";
 	cin >> USPopulation;
 	cout << "The population of the US is ";
-	cout << USPopulation / long double(worldPopulation) * 100 << "% of the world population.\n";
+	cout << USPopulation / (long double)(worldPopulation) * 100 << "% of the world population.\n";
 }
 
 // Programming Exercise 3.6
