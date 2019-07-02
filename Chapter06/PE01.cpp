@@ -7,7 +7,6 @@ using std::endl;
 
 int main() {
     char ch;
-
     cout << "Enter from keyboard (using to \"@\" to stop):\n";
 
     cin.get(ch);
