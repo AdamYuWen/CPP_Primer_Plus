@@ -7,42 +7,55 @@ using std::endl;
 
 const int NumScores = 10;
 
-double* input() {
+int input(double* ptrScores) {
     double score;
-    double scores[NumScores];
-    double* ptrScores = scores;
-    for (int i = 0; i < NumScores; ++i) {
-        scores[i] = -1;
-        cout << scores[i] << endl;
-    }
+    int cnt = 0;
 
-    cout << "Enter up to 10 golf scores (to stop enter -1):" << endl;
+    // Read scores from user input
+    cout << "Enter up to 10 golf scores (to stop enter a non-digit):" << endl;
     for (int i = 0; i < NumScores; ++i) {
-        cin >> score;
-        if (score >= 0) {
-            scores[i] = score;
+        if (cin >> score) {
+            ptrScores[i] = score;
+            ++cnt;
         }
         else {
             break;
         }
     }
-    return ptrScores;
+    return cnt;
 }
 
-void display(double* ptrScores) {
-    for (int i = 0; i < NumScores; ++i) {
-        cout << *ptrScores << endl;
-    //     if (*(ptrScores[i]) >= 0) {
-    //         cout << *(ptrScores[i]) << " ";
-    //     }
+void display(double* ptrScores, int size) {
+    cout << "The scores are ";
+    for (int i = 0; i < size; ++i) {
+        if (ptrScores[i] >= 0) {
+            cout << ptrScores[i] << " ";
+        }
+    }
+    cout << endl;
+}
+
+double average(double* ptrScores, int size) {
+    double sum = 0.0;
+
+    for (int i = 0; i < size; ++i) {
+        sum += ptrScores[i];
     }
 
-    delete[] ptrScores;
+    return sum / double(size);
 }
 
 int main() {
-	double* ptr = input();
-    display(ptr);
+    int size;
+    double score, avg;
+    double scores[NumScores];
+    double* ptrScores = scores;
+
+    size = input(ptrScores);
+    display(ptrScores, size);
+    avg = average(ptrScores, size);
+
+    cout << "The average is " << avg << ".\n";
 
     return 0;
 }
