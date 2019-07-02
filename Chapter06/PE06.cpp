@@ -19,7 +19,7 @@ int main() {
     (cin >> numContributors).get();
 
     Contribution* ptrContribution = new Contribution[numContributors];
-    bool grandPatrons[numContributors];
+    bool* ptrGrandPatrons = new bool[numContributors];
     for (int i = 0; i < numContributors; ++i) {
         cout << "Enter the contributor's name: ";
         getline(cin, ptrContribution[i].member);
@@ -27,17 +27,17 @@ int main() {
         (cin >> ptrContribution[i].contribution).get();
 
         if (ptrContribution[i].contribution > 10000) {
-            grandPatrons[i] = true;
+			ptrGrandPatrons[i] = true;
         }
         else {
-            grandPatrons[i] = false;
+			ptrGrandPatrons[i] = false;
         }
     }
 
     int cnt = 0;
     cout << "Grand Patrons: " << endl;
     for (int i = 0; i < numContributors; ++i) {
-        if (grandPatrons[i]) {
+        if (ptrGrandPatrons[i]) {
             ++cnt;
             cout << "Donor " << ptrContribution[i].member;
             cout << " contributed $" << ptrContribution[i].contribution << ".\n";
@@ -50,7 +50,7 @@ int main() {
 
     cout << "Patrons: " << endl;
     for (int i = 0; i < numContributors; ++i) {
-        if (!grandPatrons[i]) {
+        if (!ptrGrandPatrons[i]) {
             ++cnt;
             cout << "Donor " << ptrContribution[i].member;
             cout << " contributed $" << ptrContribution[i].contribution << ".\n";
@@ -61,6 +61,7 @@ int main() {
     }
 
     delete[] ptrContribution;
+	delete[] ptrGrandPatrons;
 
     return 0;
 }
