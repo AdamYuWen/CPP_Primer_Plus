@@ -1,0 +1,4 @@
+This is the txt test file for PE08.cpp.
+Write a program that opens a text file, reads it character-by-character to the end of
+the file,and reports the number of characters in the file.
+The total number of character should be 189.
