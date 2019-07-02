@@ -1,3 +1,4 @@
+// Programming Exercise 6.6
 #include <iostream>
 #include <string>
 

@@ -1,3 +1,4 @@
+// Programming Exercise 6.7
 #include <iostream>
 #include <string>
 #include <cctype>
