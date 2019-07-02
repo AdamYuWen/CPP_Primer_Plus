@@ -5,9 +5,10 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+const double ConversionFactor = 60.0;
+
 int main() {
     double degrees, minutes, seconds;
-	const double ConversionFactor = 60.0;
 
 	cout << "Enter a latitude in degrees, minutes, and seconds:\n";
 	cout << "First, enter the degrees: ";

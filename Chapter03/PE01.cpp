@@ -5,9 +5,11 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+// It is better to capitalize the first letter of the const.
+const int ConversionFactor = 12;
+
 int main() {
     int heightInInches;
-	const int ConversionFactor = 12;	// It is better to capitalize the first letter of the const.
 
 	cout << "What is your height in integer inches? ________\b\b\b\b\b\b\b\b";
 	cin >> heightInInches;

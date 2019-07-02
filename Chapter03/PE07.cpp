@@ -5,11 +5,12 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+const double kmToMiles = 62.14;
+const double gallonToLiters = 3.875;
+
+
 int main() {
     double european, us;
-
-	const double kmToMiles = 62.14;
-	const double gallonToLiters = 3.875;
 
 	cout << "How many liters per 100 kilometers? ";
 	cin >> european;

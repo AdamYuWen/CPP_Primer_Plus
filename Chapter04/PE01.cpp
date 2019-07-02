@@ -5,8 +5,9 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+const int ArrSize = 20;
+
 int main() {
-	const int ArrSize = 20;
 	char firstName[ArrSize], lastName[ArrSize], letter;
 	int age;
 

@@ -5,11 +5,12 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+const double HoursMinutesSecondsCF = 60.0;
+const double HoursToDays = 24.0;
+
 int main() {
     long long secondsInput;
 	int days, hours, minutes, secondsOutput;
-	const double HoursMinutesSecondsCF = 60.0;
-	const double HoursToDays = 24.0;
 
 	cout << "Enter the number of seconds: ";
 	cin >> secondsInput;
