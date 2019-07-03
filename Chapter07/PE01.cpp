@@ -5,9 +5,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-double harmonicMean(double x, double y) {
-    return 2.0 * x * y / (x + y);
-}
+double harmonicMean(double x, double y);
 
 int main() {
     double x, y;
@@ -18,4 +16,8 @@ int main() {
     }
 
     return 0;
+}
+
+double harmonicMean(double x, double y) {
+    return 2.0 * x * y / (x + y);
 }

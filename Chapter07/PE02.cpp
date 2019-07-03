@@ -7,6 +7,25 @@ using std::endl;
 
 const int NumScores = 10;
 
+int input(double* ptrScores);
+void display(double* ptrScores, int size);
+double average(double* ptrScores, int size);
+
+int main() {
+    int size;
+    double score, avg;
+    double scores[NumScores];
+    double* ptrScores = scores;
+
+    size = input(ptrScores);
+    display(ptrScores, size);
+    avg = average(ptrScores, size);
+
+    cout << "The average is " << avg << ".\n";
+
+    return 0;
+}
+
 int input(double* ptrScores) {
     double score;
     int cnt = 0;
@@ -43,19 +62,4 @@ double average(double* ptrScores, int size) {
     }
 
     return sum / double(size);
-}
-
-int main() {
-    int size;
-    double score, avg;
-    double scores[NumScores];
-    double* ptrScores = scores;
-
-    size = input(ptrScores);
-    display(ptrScores, size);
-    avg = average(ptrScores, size);
-
-    cout << "The average is " << avg << ".\n";
-
-    return 0;
 }

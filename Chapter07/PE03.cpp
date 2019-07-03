@@ -13,17 +13,8 @@ struct Box {
     float volume;
 };
 
-void displayBox(Box box) {
-    cout << "The maker is " << box.maker << endl;
-    cout << "The height is " << box.height << endl;
-    cout << "The width is " << box.width << endl;
-    cout << "The length is " << box.length << endl;
-    cout << "The volume is " << box.volume << endl;
-}
-
-void setVolume(Box* ptrBox) {
-    ptrBox->volume = ptrBox->length * ptrBox->width * ptrBox->height;
-}
+void displayBox(Box box);
+void setVolume(Box* ptrBox);
 
 int main() {
     Box box = { "Box1", 1.1, 2.2, 3.3, 0.0 };
@@ -38,4 +29,16 @@ int main() {
     displayBox(box);
 
     return 0;
+}
+
+void displayBox(Box box) {
+    cout << "The maker is " << box.maker << endl;
+    cout << "The height is " << box.height << endl;
+    cout << "The width is " << box.width << endl;
+    cout << "The length is " << box.length << endl;
+    cout << "The volume is " << box.volume << endl;
+}
+
+void setVolume(Box* ptrBox) {
+    ptrBox->volume = ptrBox->length * ptrBox->width * ptrBox->height;
 }
