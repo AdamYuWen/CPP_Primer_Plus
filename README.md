@@ -5,3 +5,4 @@ Chapter 04 [Commpound Types](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/m
 Chapter 05 [Loops and Relational Expressions](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter05)  
 Chapter 06 [Branching Statements and Logical Operators](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06)  
 Chapter 07 [Functions: C++'s Programming Modules](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07)  
+Chapter 08 [Adventures in Functions](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08)  
