@@ -3,7 +3,7 @@
 - [ ] Programming Exercise 7.10  
 # Notes:
 - Pointer declaration:
-  - `_int* ptr_` is a pointer to an int (* is close to the variable type)
-  - `_int (*ptrFcn)(double, double)_` is a pointer to functions (* is close to the pointer)
+  - _`int* ptr`_ is a pointer to an int (* is close to the variable type)
+  - _`int (*ptrFcn)(double, double)`_ is a pointer to functions (* is close to the pointer)
 - Dereference operator (*):
-  - `_*ptr_` returns the value of the pointer points to (* is close to the pointer)
+  - _`*ptr`_ returns the value of the pointer points to (* is close to the pointer)
