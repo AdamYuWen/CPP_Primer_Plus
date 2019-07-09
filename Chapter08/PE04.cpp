@@ -3,7 +3,7 @@
 using namespace std;
 
 struct stringy {
-    char* str; // points to a string
+    char* str;  // points to a string
     int ct;     // length of string (not counting '\0')
 };
 
@@ -32,7 +32,7 @@ int main() {
 
     show("Done!");
 
-    delete beany.str;
+    delete[] beany.str;
 
     return 0;
 }
