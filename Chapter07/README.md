@@ -1,4 +1,4 @@
-# Re-do the following questions:  
+# Re-do Questions:  
 - [ ] Programming Exercise 7.8  
 - [ ] Programming Exercise 7.10  
 # Notes:
