@@ -6,3 +6,4 @@ Chapter 05 [Loops and Relational Expressions](https://github.com/AdamYuWen/CPP_P
 Chapter 06 [Branching Statements and Logical Operators](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06)  
 Chapter 07 [Functions: C++'s Programming Modules](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07)  
 Chapter 08 [Adventures in Functions](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08)  
+Chapter 09 [Memory Models and Namespaces](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter09)  

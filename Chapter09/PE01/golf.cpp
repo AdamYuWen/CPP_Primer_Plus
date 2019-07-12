@@ -1,5 +1,4 @@
-// golf.cpp -- function definitions to match the prototypes in the header file
-// golf.h
+// golf.cpp -- set values of golf and show golf
 #include <iostream>
 #include <cstring>
 #include "golf.h"
