@@ -1,4 +1,7 @@
 // golf.h -- for golf.cpp
+#ifndef GOLF_H
+#define GOLF_H
+
 const int Len = 40;
 const int arrSize = 10;
 struct golf {
@@ -22,3 +25,5 @@ void handicap(golf& g, int hc);
 
 // function displays contents of golf structure
 void showgolf(const golf& g);
+
+#endif /* GOLF_H */
