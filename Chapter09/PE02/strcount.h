@@ -1,4 +1,4 @@
-// strcount.h -- for strcount.cpp1
+// strcount.h -- for strcount.cpp
 #ifndef STRCOUNT_H
 #define STRCOUNT_H
 
