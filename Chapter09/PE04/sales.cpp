@@ -1,3 +1,4 @@
+// sales.cpp -- set and show Sales
 #include <iostream>
 #include "sales.h"
 

@@ -1,3 +1,4 @@
+// sales.h -- for sales.cpp
 #ifndef SALES_H
 #define SALES_H
 
