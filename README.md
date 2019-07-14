@@ -1,6 +1,6 @@
 # C++ Primer Plus (6th Edition) Answers
 
-- Chapter 03 [Dealing with Data](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03)
+### Chapter 03 [Dealing with Data](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03/PE01.cpp) |
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03/PE02.cpp) |
@@ -12,7 +12,7 @@
    [PE08](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03/PE08.cpp) |
    [PE09](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03/PE09.cpp)
  
-- Chapter 04 [Compound Types](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter04)
+### Chapter 04 [Compound Types](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter04)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter04/PE01.cpp) |
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter04/PE02.cpp) |
@@ -25,7 +25,7 @@
    [PE09](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter04/PE09.cpp) |
    [PE10](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter04/PE10.cpp)
  
-- Chapter 05 [Loops and Relational Expressions](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter05)
+### Chapter 05 [Loops and Relational Expressions](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter05)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter05/PE01.cpp) |
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter05/PE02.cpp) |
@@ -38,7 +38,7 @@
    [PE09](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter05/PE09.cpp) |
    [PE10](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter05/PE10.cpp)
 
-- Chapter 06 [Branching Statements and Logical Operators](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06)
+### Chapter 06 [Branching Statements and Logical Operators](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06/PE01.cpp) |
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06/PE02.cpp) |
@@ -50,7 +50,7 @@
    [PE08](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06/PE08.cpp) |
    [PE09](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter06/PE09.cpp)
 
-- Chapter 07 [Functions: C++'s Programming Modules](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07)
+### Chapter 07 [Functions: C++'s Programming Modules](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07/PE01.cpp) |
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07/PE02.cpp) |
@@ -63,7 +63,7 @@
    [PE09](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07/PE09.cpp) |
    [PE10](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter07/PE10.cpp)
 
-- Chapter 08 [Adventures in Functions](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08)
+### Chapter 08 [Adventures in Functions](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08/PE01.cpp) |
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08/PE02.cpp) |
@@ -73,7 +73,7 @@
    [PE06](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08/PE06.cpp) |
    [PE07](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter08/PE07.cpp)
 
-- Chapter 09 [Memory Models and Namespaces](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter09)
+### Chapter 09 [Memory Models and Namespaces](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter09)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter09/PE01) |
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter09/PE02) |
