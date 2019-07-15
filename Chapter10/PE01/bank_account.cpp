@@ -2,18 +2,18 @@
 #include <iostream>
 #include "bank_account.h"
 
+BankAccount::BankAccount() {
+    depositorName_ = "no name";
+    accountNum_ = "none";
+    balance_ = 0.0;
+}
+
 BankAccount::BankAccount(const string& depositorName,
                          const string& accountNum,
                          double balance) {
     depositorName_ = depositorName;
     accountNum_ = accountNum;
     balance_ = balance;
-}
-
-BankAccount::BankAccount() {
-    depositorName_ = "no name";
-    accountNum_ = "none";
-    balance_ = 0.0;
 }
 
 BankAccount::~BankAccount() {}

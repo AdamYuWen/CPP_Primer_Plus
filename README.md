@@ -84,3 +84,5 @@ Note: "PE" stands for "Programming Exercise".
 ### Chapter 10 [Objects and Classes](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter10)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter10/PE01) |
+   [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter10/PE02) |
+   [PE03](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter10/PE03) |

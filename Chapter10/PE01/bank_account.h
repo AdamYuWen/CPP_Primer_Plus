@@ -13,10 +13,10 @@ private:
     string accountNum_;
     double balance_;
 public:
+    BankAccount();
     BankAccount(const string& depositorName,
                 const string& accountNum,
                 double balance);
-    BankAccount();
     ~BankAccount();
     void showBankAccount() const;
     void deposite(const double& amount);
