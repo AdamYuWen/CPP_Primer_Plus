@@ -2,8 +2,8 @@
 #include <iostream>
 #include "bank_account.h"
 
-BankAccount::BankAccount(string depositorName,
-                         string accountNum,
+BankAccount::BankAccount(const string& depositorName,
+                         const string& accountNum,
                          double balance) {
     depositorName_ = depositorName;
     accountNum_ = accountNum;

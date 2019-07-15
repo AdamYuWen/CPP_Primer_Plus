@@ -13,8 +13,8 @@ private:
     string accountNum_;
     double balance_;
 public:
-    BankAccount(string depositorName,
-                string accountNum,
+    BankAccount(const string& depositorName,
+                const string& accountNum,
                 double balance);
     BankAccount();
     ~BankAccount();
