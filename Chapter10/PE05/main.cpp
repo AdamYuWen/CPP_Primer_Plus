@@ -2,13 +2,17 @@
 #include <iostream>
 #include <cctype> // or ctype.h
 #include "stack.h"
+
 int main() {
     using namespace std;
+
     Stack st; // create an empty stack
     char ch;
-    unsigned long po;
-    cout << "Please enter A to add a purchase order,\n"
-         << "P to process a PO, or Q to quit.\n";
+    customer c;
+    double total = 0.0;
+
+    cout << "Please enter A to add a customer,\n"
+         << "P to remove a customer, or Q to quit.\n";
     while (cin >> ch && toupper(ch) != 'Q') {
         while (cin.get() != '\n') {
             continue;
@@ -20,13 +24,15 @@ int main() {
         switch(ch) {
         case 'A':
         case 'a':
-            cout << "Enter a PO number to add: ";
-            cin >> po;
+            cout << "Enter a customer's fullname: ";
+            cin.getline(c.fullname, 35);
+            cout << "Enter the customer's payment: ";
+            (cin >> c.payment).get();
             if (st.isfull()) {
                 cout << "stack already full\n";
             }
             else {
-                st.push(po);
+                st.push(c);
                 break;
             }
         case 'P':
@@ -35,14 +41,17 @@ int main() {
                 cout << "stack already empty\n";
             }
             else {
-                st.pop(po);
-                cout << "PO #" << po << " popped\n";
+                st.pop(c);
+                cout << "Customer " << c.fullname << " popped\n";
+                total += c.payment;
             }
             break;
         }
-        cout << "Please enter A to add a purchase order,\n"
-             << "P to process a PO, or Q to quit.\n";
+        cout << "The total payment is " << total << endl;
+        cout << "Please enter A to add a customer,\n"
+             << "P to remove a customer, or Q to quit.\n";
     }
     cout << "Bye\n";
+
     return 0;
 }
