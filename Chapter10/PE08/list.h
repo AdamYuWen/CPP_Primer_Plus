@@ -1,4 +1,7 @@
 // list.h -- List interface
+#ifndef LIST_H
+#define LIST_H
+
 typedef int Item;
 
 class List {
@@ -18,3 +21,5 @@ public:
     void setNode(const int& idx, const Item& node);
     void showList() const;
 };
+
+#endif /* LIST_H */
