@@ -30,13 +30,8 @@ int main() {
     org3.showList();
 
     cout << endl << "Visit a node:" << endl;
-    org3.visitNode(3);
-    org3.visitNode(6);
-
-    cout << endl << "Change a node value:" << endl;
-    org3.setNode(2, 2);
+    org3.visit(addone);
     org3.showList();
-    org3.setNode(6, 2);
 
     return 0;
 }

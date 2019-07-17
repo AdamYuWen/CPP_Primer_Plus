@@ -54,27 +54,6 @@ bool List::isfull() const {
     }
 }
 
-void List::visitNode(const int& idx) const {
-    if (idx <= maxListSize) {
-        std::cout << "The " << idx << "'s node is "
-                  << list_[idx - 1] << ".\n";
-    }
-    else {
-        std::cout << "Invalid input. The index is larger than "
-                  << maxListSize << ".\n";
-    }
-}
-
-void List::setNode(const int& idx, const Item& node) {
-    if (idx <= listSize_) {
-        list_[idx - 1] = node;
-    }
-    else {
-        std::cout << "Invalid input. The index is larger than "
-                  << maxListSize << ".\n";
-    }
-}
-
 void List::showList() const {
     using std::cout;
 
@@ -84,4 +63,14 @@ void List::showList() const {
         cout << " " << list_[i];
     }
     cout << ".\n";
+}
+
+void List::visit(void (*pf)(Item& node)) {
+    for (int i = 0; i < listSize_; ++i) {
+        (*pf)(list_[i]);
+    }
+}
+
+void addone(Item& node) {
+    node += 1;
 }

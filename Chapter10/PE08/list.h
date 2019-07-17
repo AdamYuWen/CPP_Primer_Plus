@@ -17,9 +17,10 @@ public:
     void add(const Item& node);
     bool isempty() const;
     bool isfull() const;
-    void visitNode(const int& idx) const;
-    void setNode(const int& idx, const Item& node);
     void showList() const;
+    void visit(void (*pf)(Item& node));
 };
+
+void addone(Item& node);
 
 #endif /* LIST_H */
