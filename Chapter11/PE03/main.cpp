@@ -1,4 +1,4 @@
-// Programming Exercise 11.1
+// Programming Exercise 11.3
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
