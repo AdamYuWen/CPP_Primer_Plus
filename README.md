@@ -1,6 +1,16 @@
 # C++ Primer Plus (6th Edition) Answers
 Note: "PE" stands for "Programming Exercise".
 
+### Chapter 02 [Setting Out to C++](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02)
+
+   [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02/PE01.cpp) |
+   [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02/PE02.cpp) |
+   [PE03](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02/PE03.cpp) |
+   [PE04](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02/PE04.cpp) |
+   [PE05](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02/PE05.cpp) |
+   [PE06](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02/PE06.cpp) |
+   [PE07](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter02/PE07.cpp)
+
 ### Chapter 03 [Dealing with Data](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter03/PE01.cpp) |
