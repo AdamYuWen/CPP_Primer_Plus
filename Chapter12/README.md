@@ -1,3 +1,6 @@
+# Re-do Questions:
+- [ ] Programming Exercise 12.1
+
 # Notes:
 ## C++ **automatically provides** the following member of functions:
   - A **default constructor** if you define no constructors
@@ -19,12 +22,12 @@
 - Definition Example:
 ```
 StringBad::StringBad(const StringBad & st) {
-  num_strings++; // handle static member update
-  len = st.len;  // same length
-  str = new char [len + 1]; // allot space
-  std::strcpy(str, st.str); // copy string to new location
-  cout << num_strings << ": \"" << str
-       << "\" object created\n"; // For Your Information
+    num_strings++; // handle static member update
+    len = st.len;  // same length
+    str = new char [len + 1]; // allot space
+    std::strcpy(str, st.str); // copy string to new location
+    cout << num_strings << ": \"" << str
+         << "\" object created\n"; // For Your Information
 }
 ```
 
@@ -39,12 +42,12 @@ StringBad::StringBad(const StringBad & st) {
 - Definition Example:
 ```
 StringBad & StringBad::operator=(const StringBad & st) {
-  if (this == &st) // object assigned to itself
-    return *this;  // all done
-  delete [] str;   // free old string
-  len = st.len;
-  str = new char [len + 1]; // get space for new string
-  std::strcpy(str, st.str); // copy the string
-  return *this;             // return reference to invoking object
+    if (this == &st) // object assigned to itself
+      return *this;  // all done
+    delete [] str;   // free old string
+    len = st.len;
+    str = new char [len + 1]; // get space for new string
+    std::strcpy(str, st.str); // copy the string
+    return *this;             // return reference to invoking object
 }
 ```
