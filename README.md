@@ -111,3 +111,7 @@ Note: "PE" stands for "Programming Exercise".
    [PE05](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter11/PE05) |
    [PE06](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter11/PE06) |
    [PE07](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter11/PE07)
+   
+### Chapter 12 [Classes and Dynamic Memory Allocation](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter12)
+
+   [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter12/PE01) |
