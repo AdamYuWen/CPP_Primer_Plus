@@ -1,3 +1,6 @@
+# Re-do Questions:
+- [ ] Programming Exercise 12.1
+
 # Notes:
 ## C++ **automatically provides** the following member of functions:
   - A **default constructor** if you define no constructors
@@ -17,16 +20,16 @@
 - The default copy constructor performs a member-by-member copy of the nonstatic members (memberwise copying, also sometimes called shallow copying).
 - If a class contains members that are **pointers initialized by new**, you should define a copy constructor that **copies the pointed-to data instead of copying the pointers themselves**. This is termed deep copying. The alternative form of copying (memberwise, or shallow, copying) just copies pointer values. A shallow copy is just that—**the shallow “scraping off” of pointer information for copying, rather than the deeper “mining” required to copy the constructs referred to by the pointers**.
 - Definition Example:
-```
-StringBad::StringBad(const StringBad & st) {
-  num_strings++; // handle static member update
-  len = st.len;  // same length
-  str = new char [len + 1]; // allot space
-  std::strcpy(str, st.str); // copy string to new location
-  cout << num_strings << ": \"" << str
-       << "\" object created\n"; // For Your Information
-}
-```
+  ```
+  StringBad::StringBad(const StringBad & st) {
+      num_strings++; // handle static member update
+      len = st.len;  // same length
+      str = new char [len + 1]; // allot space
+      std::strcpy(str, st.str); // copy string to new location
+      cout << num_strings << ": \"" << str
+           << "\" object created\n"; // For Your Information
+  }
+  ```
 
 ## Assignment Operators -- `Class_name& Class_name::operator=(const Class_name&)`
 - An overloaded assignment operator is used when you assign one object to another **existing object**.
@@ -37,14 +40,14 @@ StringBad::StringBad(const StringBad & st) {
   ```
 - Like a copy constructor, an implicit implementation of an assignment operator performs a member-to-member copy.
 - Definition Example:
-```
-StringBad & StringBad::operator=(const StringBad & st) {
-  if (this == &st) // object assigned to itself
-    return *this;  // all done
-  delete [] str;   // free old string
-  len = st.len;
-  str = new char [len + 1]; // get space for new string
-  std::strcpy(str, st.str); // copy the string
-  return *this;             // return reference to invoking object
-}
-```
+  ```
+  StringBad & StringBad::operator=(const StringBad & st) {
+      if (this == &st) // object assigned to itself
+          return *this;  // all done
+      delete [] str;   // free old string
+      len = st.len;
+      str = new char [len + 1]; // get space for new string
+      std::strcpy(str, st.str); // copy the string
+      return *this;             // return reference to invoking object
+  }
+  ```
