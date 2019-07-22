@@ -8,6 +8,9 @@ Cow::Cow() {
     name[0] = '\0';
     hobby = new char[1];
     hobby[0] = '\0';
+    // If hobby is assigned to nullptr, the operator<< need to be updated.
+    // Otherwise, ShowCow for the object won't work.
+    // hobby = nullptr;
     weight = 0.0;
 }
 
