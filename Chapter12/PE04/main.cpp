@@ -26,53 +26,20 @@ int main() {
     cout << "\nTest isfull function:\n";
     cout << "Full?: " << std::boolalpha << st.isfull() << endl;
 
+    cout << "\nTest copy constructor:\n";
+    Stack st1 = st;
+    cout << st1;
+
+    cout << "\nTest assignment operator:\n";
+    Stack st2;
+    st2 = st;
+    cout << st2;
+
     cout << "\nTest pop function:\n";
     temp = 1; // change the temp to a number not equals to 18002
     st.pop(temp); // in the pop function, temp will be assigned to 18002
     cout << "temp = " << temp << endl;
     cout << st;
-
-    // Stack st; // create an empty stack
-    // char ch;
-    // unsigned long po;
-
-    // cout << "Please enter A to add a customer,\n"
-    //      << "P to remove a customer, or Q to quit.\n";
-    // while (cin >> ch && toupper(ch) != 'Q') {
-    //     while (cin.get() != '\n') {
-    //         continue;
-    //     }
-    //     if (!isalpha(ch)) {
-    //         cout << '\a';
-    //         continue;
-    //     }
-    //     switch(ch) {
-    //     case 'A':
-    //     case 'a':
-    //         cout << "Enter a PO number to add: ";
-    //         cin >> po;
-    //         if (st.isfull()) {
-    //             cout << "stack already full\n";
-    //         }
-    //         else {
-    //             st.push(po);
-    //         }
-    //         break;
-    //     case 'P':
-    //     case 'p':
-    //         if (st.isempty()) {
-    //             cout << "stack already empty\n";
-    //         }
-    //         else {
-    //             st.pop(po);
-    //             cout << "PO #" << po << " popped\n";
-    //         }
-    //         break;
-    //     }
-    //     cout << "Please enter A to add a customer,\n"
-    //          << "P to remove a customer, or Q to quit.\n";
-    // }
-    // cout << "Bye\n";
 
     return 0;
 }

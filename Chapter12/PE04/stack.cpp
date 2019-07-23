@@ -11,6 +11,9 @@ Stack::Stack(int n) {
 // copy constructor
 Stack::Stack(const Stack& st) {
     pitems = new Item[st.size];
+    for (int i = 0; i < st.top; ++i) {
+        pitems[i] = st.pitems[i];
+    }
     size = st.size;
     top = st.top;
 }
@@ -27,6 +30,9 @@ Stack& Stack::operator=(const Stack& st) {
     } else {
         delete[] pitems;
         pitems = new Item[st.size];
+        for (int i = 0; i < st.top; ++i) {
+            pitems[i] = st.pitems[i];
+        }
         size = st.size;
         top = st.top;
     }
