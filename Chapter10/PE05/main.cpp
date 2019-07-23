@@ -33,8 +33,8 @@ int main() {
             }
             else {
                 st.push(c);
-                break;
             }
+            break;
         case 'P':
         case 'p':
             if (st.isempty()) {
