@@ -12,7 +12,7 @@ public:
     virtual ~Cd();
     virtual void Report() const; // reports all CD data
     virtual Cd& operator=(const Cd& cd);
-/* private: */
+private:
     char performer_[50];
     char label_[20];
     int selections_; // number of selections

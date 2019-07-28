@@ -1,10 +1,11 @@
+// Programming Exercise 13.1
 #include <iostream>
 #include "cd.h"
-#include "classic.h" // which will contain #include cd.h
+#include "classic.h"
 
 using std::cout;
 
-void Bravo(const Cd & disk);
+void Bravo(const Cd& disk);
 
 int main() {
     Cd c1("Beatles", "Capitol", 14, 35.5);
