@@ -124,3 +124,4 @@ Note: "PE" stands for "Programming Exercise".
 ### Chapter 13 [Class Inheritance](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter13)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter13/PE01) |
+   [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter13/PE02) |
