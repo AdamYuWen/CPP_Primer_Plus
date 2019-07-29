@@ -5,21 +5,21 @@
 
 // constructor
 Classic::Classic(const char* primary, const char* performer,
-                 const char* label, int selections, double playtime) :
-    Cd(performer, label, selections, playtime) {
+                 const char* label, int selections, double playtime)
+    : Cd(performer, label, selections, playtime) {
     std::strcpy(primary_, primary);
 
 }
 
 // copy constructor
-Classic::Classic(const Classic& classic) :
-    Cd(classic) {
+Classic::Classic(const Classic& classic)
+    : Cd(classic) {
     std::strcpy(primary_, classic.primary_);
 }
 
 // default constructor
-Classic::Classic() :
-    Cd() {
+Classic::Classic()
+    : Cd() {
     std::strcpy(primary_, "none");
 }
 
