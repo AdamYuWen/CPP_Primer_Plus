@@ -7,7 +7,6 @@
 Classic::Classic(const char* primary, const char* performer,
                  const char* label, int selections, double playtime) :
     Cd(performer, label, selections, playtime) {
-    // std::cout << "Classic constructor:\n";
     primary_ = new char[std::strlen(primary) + 1];
     std::strcpy(primary_, primary);
 
@@ -16,7 +15,6 @@ Classic::Classic(const char* primary, const char* performer,
 // copy constructor
 Classic::Classic(const Classic& classic) :
     Cd(classic) {
-    // std::cout << "Classic copy constructor:\n";
     primary_ = new char[std::strlen(classic.primary_) + 1];
     std::strcpy(primary_, classic.primary_);
 }
@@ -24,7 +22,6 @@ Classic::Classic(const Classic& classic) :
 // default constructor
 Classic::Classic() :
     Cd() {
-    // std::cout << "Classic default constructor:\n";
     primary_ = new char[5];
     std::strcpy(primary_, "none");
 }
@@ -36,14 +33,12 @@ Classic::~Classic() {
 
 // reports all Classic data
 void Classic::Report() const {
-    // std::cout << "Classic report:\n";
     std::cout << "The primary is " << primary_ << ".\n";
     Cd::Report();
 }
 
 // overload assignment operator
 Classic& Classic::operator=(const Classic& classic) {
-    // std::cout << "Classic assignment operator:\n";
     if (this == &classic) {
         return *this;
     } else {

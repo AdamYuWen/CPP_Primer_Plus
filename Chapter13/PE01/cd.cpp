@@ -6,7 +6,6 @@
 // constructor
 Cd::Cd(const char* performer, const char* label, int selections,
        double playtime) {
-    // std::cout << "Cd constructor:\n";
     std::strcpy(performer_, performer);
     std::strcpy(label_, label);
     selections_ = selections;
@@ -15,7 +14,6 @@ Cd::Cd(const char* performer, const char* label, int selections,
 
 // copy constructor
 Cd::Cd(const Cd& cd) {
-    // std::cout << "Cd copy constructor:\n";
     std::strcpy(performer_, cd.performer_);
     std::strcpy(label_, cd.label_);
     selections_ = cd.selections_;
@@ -24,7 +22,6 @@ Cd::Cd(const Cd& cd) {
 
 // default constructor
 Cd::Cd() {
-    // std::cout << "Cd default constructor:\n";
     std::strcpy(performer_, "none");
     std::strcpy(label_, "none");
     selections_ = 0;
@@ -36,7 +33,6 @@ Cd::~Cd() {}
 
 // reports all CD data
 void Cd::Report() const {
-    // std::cout << "Cd report:\n";
     using std::cout;
     using std::endl;
     cout << "The performer is " << performer_ << ".\n";
@@ -47,7 +43,6 @@ void Cd::Report() const {
 
 // overload assignment operator
 Cd& Cd::operator=(const Cd& cd) {
-    // std::cout << "Cd assignment operator:\n";
     if (this == &cd) {
         return *this;
     } else {

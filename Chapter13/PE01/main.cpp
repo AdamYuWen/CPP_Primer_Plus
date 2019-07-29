@@ -18,7 +18,7 @@ int main() {
     c2.Report(); // use Classic method
     cout << "\n";
 
-    cout << "Using type cd * pointer to objects:\n";
+    cout << "Using type cd* pointer to objects:\n";
     pcd->Report(); // use Cd method for cd object
     pcd = &c2;
     pcd->Report(); // use Classic method for classic object
