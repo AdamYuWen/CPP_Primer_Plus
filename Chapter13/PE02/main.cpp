@@ -1,4 +1,4 @@
-// Programming Exercise 13.1
+// Programming Exercise 13.2
 #include <iostream>
 #include "cd.h"
 #include "classic.h"
