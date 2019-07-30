@@ -9,10 +9,10 @@ DMAABC::DMAABC(const char* l, int r) {
     rating = r;
 }
 
-DMAABC::DMAABC(const DMAABC& rs) {
-    label = new char[std::strlen(rs.label) + 1];
-    std::strcpy(label, rs.label);
-    rating = rs.rating;
+DMAABC::DMAABC(const DMAABC& abcs) {
+    label = new char[std::strlen(abcs.label) + 1];
+    std::strcpy(label, abcs.label);
+    rating = abcs.rating;
 }
 
 DMAABC::~DMAABC() {
@@ -22,52 +22,60 @@ DMAABC::~DMAABC() {
 void DMAABC::View() {
     using std::cout;
     using std::endl;
-    cout << "DMAABC::View()\n";
     cout << "label: " << label << endl;
     cout << "rating: " << rating << endl;
 }
 
-std::ostream& operator<<(std::ostream& os, const DMAABC& rs) {
-    os << "Label: " << rs.label << std::endl;
-    os << "Rating: " << rs.rating << std::endl;
+DMAABC& DMAABC::operator=(const DMAABC& abcs) {
+    if (this == &abcs)
+        return *this;
+    delete[] label;
+    label = new char[std::strlen(abcs.label) + 1];
+    std::strcpy(label, abcs.label);
+    rating = abcs.rating;
+    return *this;
+}
+
+std::ostream& operator<<(std::ostream& os, const DMAABC& abcs) {
+    os << "Label: " << abcs.label << std::endl;
+    os << "Rating: " << abcs.rating << std::endl;
     return os;
 }
 
 // baseDMA methods
-baseDMA::~baseDMA() {
-    delete[] label;
-}
+baseDMA::baseDMA(const char*l, int r) : DMAABC(l, r) {}
 
-baseDMA& baseDMA::operator=(const baseDMA& rs) {
-    if (this ==&rs)
-        return *this;
-    delete[] label;
-    label = new char[std::strlen(rs.label) + 1];
-    std::strcpy(label, rs.label);
-    rating = rs.rating;
-    return *this;
+baseDMA::baseDMA(const baseDMA& bs) : DMAABC(bs) {}
+
+baseDMA::~baseDMA() {}
+
+baseDMA& baseDMA::operator=(const baseDMA& bs) {
+    DMAABC::operator=(bs);
 }
 
 void baseDMA::View() {
     DMAABC::View();
 }
 
-std::ostream& operator<<(std::ostream& os, const baseDMA& rs) {
-    os << (const DMAABC&) rs;
+std::ostream& operator<<(std::ostream& os, const baseDMA& bs) {
+    os << (const DMAABC&) bs;
     return os;
 }
 
 // lacksDMA methods
-lacksDMA::lacksDMA(const char* c, const char* l, int r)
-    : DMAABC(l, r) {
+lacksDMA::lacksDMA(const char* c, const char* l, int r) : DMAABC(l, r) {
     std::strncpy(color, c, 39);
     color[39] = '\0';
 }
 
-lacksDMA::lacksDMA(const char* c, const baseDMA& rs)
-    : DMAABC(rs) {
+lacksDMA::lacksDMA(const char* c, const DMAABC& ls) : DMAABC(ls) {
     std::strncpy(color, c, COL_LEN - 1);
     color[COL_LEN - 1] = '\0';
+}
+
+void lacksDMA::View() {
+    DMAABC::View();
+    std::cout << "color: " << color << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& os, const lacksDMA& ls) {
@@ -77,20 +85,17 @@ std::ostream& operator<<(std::ostream& os, const lacksDMA& ls) {
 }
 
 // hasDMA methods
-hasDMA::hasDMA(const char* s, const char* l, int r)
-    : DMAABC(l, r) {
+hasDMA::hasDMA(const char* s, const char* l, int r) : DMAABC(l, r) {
     style = new char[std::strlen(s) + 1];
     std::strcpy(style, s);
 }
 
-hasDMA::hasDMA(const char* s, const baseDMA& rs)
-    : DMAABC(rs) {
+hasDMA::hasDMA(const char* s, const DMAABC& hs) : DMAABC(hs) {
     style = new char[std::strlen(s) + 1];
     std::strcpy(style, s);
 }
 
-hasDMA::hasDMA(const hasDMA& hs)
-    : DMAABC(hs) { // invoke base class copy constructor
+hasDMA::hasDMA(const hasDMA& hs) : DMAABC(hs) {
     style = new char[std::strlen(hs.style) + 1];
     std::strcpy(style, hs.style);
 }
@@ -102,11 +107,16 @@ hasDMA::~hasDMA() {
 hasDMA& hasDMA::operator=(const hasDMA& hs) {
     if (this == &hs)
         return *this;
-    baseDMA::operator=(hs); // copy base portion
+    DMAABC::operator=(hs); // copy base portion
     delete[] style;        // prepare for new style
     style = new char[std::strlen(hs.style) + 1];
     std::strcpy(style, hs.style);
     return *this;
+}
+
+void hasDMA::View() {
+    DMAABC::View();
+    std::cout << "style: " << style << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& os, const hasDMA& hs) {
