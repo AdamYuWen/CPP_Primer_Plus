@@ -1,8 +1,8 @@
 CXX = g++
 CXXFLAGS = -Wall
 LDFLAGS =
-OBJFILES = main.o dma.o
-TARGET = PE03
+OBJFILES = main.o port.o vintageport.o
+TARGET = PE04
 
 all: $(TARGET)
 
