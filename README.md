@@ -127,3 +127,7 @@ Note: "PE" stands for "Programming Exercise".
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter13/PE02) |
    [PE03](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter13/PE03) |
    [PE04](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter13/PE04)
+   
+### Chapter 14 [Reusing Code in C++](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter14)
+
+   [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter14/PE01) |

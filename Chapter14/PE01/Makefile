@@ -1,0 +1,13 @@
+CXX = g++
+CXXFLAGS = -Wall
+LDFLAGS =
+OBJFILES = main.o wine.o
+TARGET = PE01
+
+all: $(TARGET)
+
+$(TARGET): $(OBJFILES)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
+
+clean:
+	rm -f $(OBJFILES) $(TARGET)
