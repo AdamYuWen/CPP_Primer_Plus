@@ -1,4 +1,4 @@
-// pairs.cpp -- defining and using a Pair template
+// pairs.h -- defining and using a Pair template
 #ifndef PAIRS_H_
 #define PAIRS_H_
 
