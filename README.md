@@ -134,3 +134,4 @@ Note: "PE" stands for "Programming Exercise".
    [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter14/PE02) |
    [PE03](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter14/PE03) |
    [PE04](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter14/PE04) |
+   [PE05](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter14/PE05)
