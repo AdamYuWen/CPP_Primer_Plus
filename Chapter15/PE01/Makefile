@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall
+CXXFLAGS =
 LDFLAGS =
 OBJFILES = main.o tv.o
 TARGET = PE01

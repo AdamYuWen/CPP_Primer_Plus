@@ -51,3 +51,17 @@ void Tv::settings() const {
         cout << "Input = " << (input == TV ? "TV" : "DVD") << endl;
     }
 }
+
+void Remote::set_remote_mode(Tv& t) {
+    if (t.state == Tv::On) {
+        remote_mode = (remote_mode == Normal) ? Interactive : Normal;
+    } else {
+        std::cout << "The TV is OFF. Cannot set the remote mode.\n";
+    }
+}
+
+void Remote::show_remote_mode() const {
+    std::cout << "Remote mode = "
+              << (remote_mode == Remote::Normal ? "Normal" : "Interactive")
+              << std::endl;
+}

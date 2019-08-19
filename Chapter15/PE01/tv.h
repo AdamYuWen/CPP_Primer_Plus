@@ -14,7 +14,6 @@ public:
     enum { TV, DVD };
 
     friend class Remote; // Remote can access Tv private parts
-    void show_remote_mode(Remote& r);
 
     Tv(int s = Off, int mc = 125) : state(s), volume(5),
         maxchannel(mc), channel(2), mode(Cable), input(TV) {}
@@ -27,6 +26,9 @@ public:
     void set_mode() { mode = (mode == Antenna) ? Cable : Antenna; }
     void set_input() { input = (input == TV)? DVD : TV; }
     void settings() const; // display all settings
+
+    void set_remote_mode(Remote& r);
+    void show_remote_mode(Remote& r) const;
 private:
     int state; // on or off
     int volume; // assumed to be digitized
@@ -41,7 +43,8 @@ public:
     enum { Normal, Interactive };
 
     friend class Tv;
-    Remote(int m = Tv::TV) : mode(m) {}
+
+    Remote(int m = Tv::TV) : mode(m), remote_mode(Normal) {}
     bool volup(Tv& t) { return t.volup(); }
     bool voldown(Tv& t) { return t.voldown(); }
     void onoff(Tv& t) { t.onoff(); }
@@ -51,16 +54,21 @@ public:
     void set_mode(Tv& t) { t.set_mode(); }
     void set_input(Tv& t) { t.set_input(); }
 
-    void set_remote() {
-        remote_mode = (remote_mode == Normal) ? Interactive, Normal;
-    }
+    void set_remote_mode(Tv& t);
+    void show_remote_mode() const;
 private:
     int mode; // controls TV or DVD
-    int remote_mode;
+    int remote_mode; // Normal or Interactive
 };
 
-inline void Tv::show_remote_mode(Remote& r) {
-    std::cout << "test" << r.mode << std::endl;
+inline void Tv::set_remote_mode(Remote& r) {
+    r.set_remote_mode(*this);
+}
+
+inline void Tv::show_remote_mode(Remote& r) const {
+    std::cout << "Remote mode = "
+              << (r.remote_mode == Remote::Normal ? "Normal" : "Interactive")
+              << std::endl;
 }
 
 #endif

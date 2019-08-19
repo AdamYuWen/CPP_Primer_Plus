@@ -1,12 +1,3 @@
-// Modify the Tv and Remote classes as follows:
-// a. Make them mutual friends.
-// b. Add a state variable member to the Remote class that describes whether the
-// remote control is in normal or interactive mode.
-// c. Add a Remote method that displays the mode.
-// d. Provide the Tv class with a method for toggling the new Remote member.
-// This method should work only if the TV is in the on state.
-// Write a short program that tests these new features.
-
 //use_tv.cpp -- using the Tv and Remote classes
 #include <iostream>
 #include "tv.h"
@@ -28,13 +19,13 @@ int main() {
     grey.volup(s42);
     cout << "\n42\" settings after using remote:\n";
     s42.settings();
-    s42.show_Remote_mode(grey);
 
-    // Tv s58(Tv::On);
-    // s58.set_mode();
-    // grey.set_chan(s58,28);
-    // cout << "\n58\" settings:\n";
-    // s58.settings();
+    cout << "\nTesting new functions:\n";
+    s42.show_remote_mode(grey);
+    s42.set_remote_mode(grey);
+    s42.onoff();
+    grey.set_remote_mode(s42);
+    grey.show_remote_mode();
 
     return 0;
 }
