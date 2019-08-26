@@ -139,3 +139,8 @@ Note: "PE" stands for "Programming Exercise".
 ### Chapter 15 [Friends, Exceptions, and More](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter15)
 
    [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter15/PE01) |
+
+### Chapter 16 [The string Class and the Standard Template Library](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter16)
+
+   [PE01](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter16/PE01) |
+   [PE02](https://github.com/AdamYuWen/CPP_Primer_Plus/tree/master/Chapter16/PE02) |
